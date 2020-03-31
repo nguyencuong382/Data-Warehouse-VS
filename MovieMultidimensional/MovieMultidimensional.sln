@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "MovieMultidimensional", "MovieMultidimensional\MovieMultidimensional.dwproj", "{C5B325B2-5124-4312-A741-FD2D8F225540}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5B325B2-5124-4312-A741-FD2D8F225540}.Development|Default.ActiveCfg = Development
+		{C5B325B2-5124-4312-A741-FD2D8F225540}.Development|Default.Build.0 = Development
+		{C5B325B2-5124-4312-A741-FD2D8F225540}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A83F727-6FE5-4F43-919A-9BAF09F9A4A3}
+	EndGlobalSection
+EndGlobal

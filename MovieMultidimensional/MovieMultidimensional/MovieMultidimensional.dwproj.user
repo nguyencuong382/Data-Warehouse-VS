@@ -1,0 +1,39 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>MOVIE DB SP2020</Id>
+            <Name>MOVIE DB SP2020</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcGk3DyJ2mEuXRm35wcCPLQAAAAAgAAAATQBPAFYASQBFACAARABCACAAUwBQADIAMAAyADAAAAAQZgAAAAEAACAAAAB4NoRlH5LP9FvUcrIJltGPtBMOvhJ8aHdZ4Id3EiZ05QAAAAAOgAAAAAIAACAAAADSbwMdz/lKgOlW4O7yZEmOHkSWREMCEzINwn3IbDyfERAAAACuzoILUKc3c7Mlyg1OPcKcQAAAAL7DZz8YMWytAKFmGGevJqVATd8B/1xeBHoG+v8/bdHokn9oKVIs19dpO+I8GeRmXYQ8QKlgj9OOJCRq3ud9XsI=</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>MOVIE DB SP2020 DW</Id>
+            <Name>MOVIE DB SP2020 DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcGk3DyJ2mEuXRm35wcCPLQAAAAAmAAAATQBPAFYASQBFACAARABCACAAUwBQADIAMAAyADAAIABEAFcAAAAQZgAAAAEAACAAAACZLSIKmkvoBOsvZjIHWo1XykMlXwCLwaBR1pzmQTTmnAAAAAAOgAAAAAIAACAAAADBnAj+IK4jGYUvSweO7pgaVRKx4Y+I33/L0nEM2A7zDhAAAABB0kC6AWHMJ/62QAVB/vjSQAAAAEBb6cSrxlmYpZYWwDrCjpdx4t3EZXGm0UWNh8liduzV4bbSCbzrJx57bBvRIYb/g0q4FD1YrwZdd2pbS/ZkN+I=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>MOVIE DB SP2020</Id>
+            <Name>MOVIE DB SP2020</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcGk3DyJ2mEuXRm35wcCPLQAAAAAgAAAATQBPAFYASQBFACAARABCACAAUwBQADIAMAAyADAAAAAQZgAAAAEAACAAAACa/Wie64mieey3nnxu3nHJhD1CqL9dtdG/3LxecwVb6AAAAAAOgAAAAAIAACAAAAB5Pxkd3XeLrB3bcaaL9UGkBnBnth2ld2Lee6ht3Pjt5RAAAACKPm4fWFcot05p/T188oaRQAAAAKC+I0cX2QWQaBf7Q/xQPRYxISzqHttlElcUvxtagStrmZdCIwxYAxdPA4+C7Rc0+wSQt3kAz7EihaTsGDW6sFY=</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>MOVIE DB SP2020 DW</Id>
+            <Name>MOVIE DB SP2020 DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcGk3DyJ2mEuXRm35wcCPLQAAAAAmAAAATQBPAFYASQBFACAARABCACAAUwBQADIAMAAyADAAIABEAFcAAAAQZgAAAAEAACAAAADVV5bSdmMovOiSGLH8yTbpJHLTqGPHEF57u8vSKFCWaAAAAAAOgAAAAAIAACAAAAAmDLjpmsYSGQr6E7VNKdwacVMKfAcsBmn7j8QxLlL6nBAAAAAUtkRKW7FUjUy+rHf3l3daQAAAALzl5zqTEgqMHOfnDfsDX1QaagiASbDvKbtJTaBXjoWrzQ+SK8xTPNNPfG3Mf/tALs6Pm5e9D048+7376BcDR7U=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>DESKTOP-96JAG8I\DW</TargetServer>
+        <TargetDatabase>MovieMultidimensional</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

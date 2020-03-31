@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Report_Moive_DW", "Report_Moive_DW\Report_Moive_DW.rptproj", "{73EA1F80-7697-4751-BF42-F09C723A55EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73EA1F80-7697-4751-BF42-F09C723A55EF}.Debug|Default.ActiveCfg = Debug
+		{73EA1F80-7697-4751-BF42-F09C723A55EF}.Debug|Default.Build.0 = Debug
+		{73EA1F80-7697-4751-BF42-F09C723A55EF}.Debug|Default.Deploy.0 = Debug
+		{73EA1F80-7697-4751-BF42-F09C723A55EF}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{73EA1F80-7697-4751-BF42-F09C723A55EF}.DebugLocal|Default.Build.0 = DebugLocal
+		{73EA1F80-7697-4751-BF42-F09C723A55EF}.Release|Default.ActiveCfg = Release
+		{73EA1F80-7697-4751-BF42-F09C723A55EF}.Release|Default.Build.0 = Release
+		{73EA1F80-7697-4751-BF42-F09C723A55EF}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE1B30C2-1646-4B05-8189-15CF34F0DEE2}
+	EndGlobalSection
+EndGlobal

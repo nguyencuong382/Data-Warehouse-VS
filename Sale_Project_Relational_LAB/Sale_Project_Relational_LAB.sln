@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Sale_Project_Relational_LAB", "Sale_Project_Relational_LAB\Sale_Project_Relational_LAB.dtproj", "{25E23870-DF60-45B7-90F7-F26C59A321DD}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Moive_DB_Spring_2020", "..\Moive_DB_Spring_2020\Moive_DB_Spring_2020\Moive_DB_Spring_2020.dtproj", "{878D5BF2-5481-401B-8792-E753CF61991F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25E23870-DF60-45B7-90F7-F26C59A321DD}.Development|Default.ActiveCfg = Development
+		{25E23870-DF60-45B7-90F7-F26C59A321DD}.Development|Default.Build.0 = Development
+		{878D5BF2-5481-401B-8792-E753CF61991F}.Development|Default.ActiveCfg = Development
+		{878D5BF2-5481-401B-8792-E753CF61991F}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F8E2E5A-1147-4B42-B3EE-BA2D9DA53E7C}
+	EndGlobalSection
+EndGlobal
