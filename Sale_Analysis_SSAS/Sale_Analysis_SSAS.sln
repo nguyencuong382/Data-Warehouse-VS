@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Sale_Analysis_SSAS", "Sale_Analysis_SSAS\Sale_Analysis_SSAS.dwproj", "{941E0B82-DCF7-4428-85A2-4DC82F93B253}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{941E0B82-DCF7-4428-85A2-4DC82F93B253}.Development|Default.ActiveCfg = Development
+		{941E0B82-DCF7-4428-85A2-4DC82F93B253}.Development|Default.Build.0 = Development
+		{941E0B82-DCF7-4428-85A2-4DC82F93B253}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DDB0163-85FB-493D-97FA-EA85B8E278FB}
+	EndGlobalSection
+EndGlobal

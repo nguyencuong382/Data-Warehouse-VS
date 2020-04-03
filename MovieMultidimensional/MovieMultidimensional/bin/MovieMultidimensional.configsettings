@@ -3,7 +3,7 @@
     <DataSources>
       <DataSource>
         <ID>MOVIE DB SP2020</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-96JAG8I\DW;Persist Security Info=True;Password=;User ID=;Initial Catalog=MOVIE_DB_SP2020</ConnectionString>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-96JAG8I\DW;Persist Security Info=True;Password=;User ID=;Initial Catalog=MOVIE_DW</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
           <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">nc</Account>
@@ -13,7 +13,7 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>Dim Customer</ID>
+        <ID>Dim Time</ID>
       </Dimension>
       <Dimension>
         <ID>Dim Machine</ID>
@@ -22,7 +22,7 @@
         <ID>Dim Movie</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Time</ID>
+        <ID>Dim Customer</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
@@ -30,34 +30,10 @@
         <ID>MOVIE DB SP2020</ID>
         <MeasureGroups>
           <MeasureGroup>
-            <ID>Dim Customer</ID>
+            <ID>Fact</ID>
             <Partitions>
               <Partition>
-                <ID>Dim Customer</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Dim Machine</ID>
-            <Partitions>
-              <Partition>
-                <ID>Dim Machine</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Dim Movie</ID>
-            <Partitions>
-              <Partition>
-                <ID>Dim Movie</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Dim Time</ID>
-            <Partitions>
-              <Partition>
-                <ID>Dim Time</ID>
+                <ID>Fact</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

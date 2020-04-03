@@ -52,7 +52,7 @@
     <DataSource Include="Datasource_Movie_DW.rds" />
   </ItemGroup>
   <ItemGroup>
-    <Report Include="Report1.rdl" />
+    <Report Include="Rport_MV.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

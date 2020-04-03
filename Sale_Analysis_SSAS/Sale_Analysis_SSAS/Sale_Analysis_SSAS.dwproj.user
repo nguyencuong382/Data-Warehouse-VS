@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Project Relational DW</Id>
+            <Name>Project Relational DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1J0/TqVTPE2OMxRWY+JAsAAAAAAsAAAAUAByAG8AagBlAGMAdAAgAFIAZQBsAGEAdABpAG8AbgBhAGwAIABEAFcAAAAQZgAAAAEAACAAAADEfJyQEMUfqDXd4wsdGTX26aI8rJsfeThwaG9xkm4cBwAAAAAOgAAAAAIAACAAAAAwCO/7Aumtbnmm75iMLsZwl3d86E5eq+lwBrsY+kRalhAAAAAkVsHsZsAe6ClIBdgZf6TyQAAAADRVwv/YHvNx7YM5Ihi5syC26s2OxCh9RL/vSFValPgGllmqu4wjGOSvceTGWwNij09qus2E0awW1uX2S9wdn7w=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Project Relational DW</Id>
+            <Name>Project Relational DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1J0/TqVTPE2OMxRWY+JAsAAAAAAsAAAAUAByAG8AagBlAGMAdAAgAFIAZQBsAGEAdABpAG8AbgBhAGwAIABEAFcAAAAQZgAAAAEAACAAAAA3MekngBPueE8mK6q7ml9sQ+1pIUQXJkXviJTnaE+oGwAAAAAOgAAAAAIAACAAAAAH8h2PjodMNh2JYDzuIq6ZdV9HzdHVvnayKSBSfKAZQxAAAABeq2EdhRoTvkqcmcOLRCxBQAAAAJx27OHrmuKGVqOG1BFZbmUQTzRpR0/kI8mNkSDlUWudCmXiDplKKjU3bbIE280u8gY4+SLSH2h0UDaDQvLlP0g=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>DESKTOP-96JAG8I\DW</TargetServer>
+        <TargetDatabase>Sale_Analysis_SSAS</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

@@ -20,8 +20,8 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Dim Customer.dim</Name>
-      <FullPath>Dim Customer.dim</FullPath>
+      <Name>Dim Time.dim</Name>
+      <FullPath>Dim Time.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dim Machine.dim</Name>
@@ -32,8 +32,8 @@
       <FullPath>Dim Movie.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Time.dim</Name>
-      <FullPath>Dim Time.dim</FullPath>
+      <Name>Dim Customer.dim</Name>
+      <FullPath>Dim Customer.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -56,7 +56,7 @@
           <ConfigurationSetting>
             <Id>MOVIE DB SP2020</Id>
             <Name>MOVIE DB SP2020</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-96JAG8I\DW;Persist Security Info=True;Password=;User ID=;Initial Catalog=MOVIE_DB_SP2020</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-96JAG8I\DW;Persist Security Info=True;Password=;User ID=;Initial Catalog=MOVIE_DW</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

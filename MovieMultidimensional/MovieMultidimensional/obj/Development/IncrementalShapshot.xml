@@ -19,7 +19,7 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>tyU/cXn+vp81NnFAyGmGvXD1Z6E=3/22/2020 4:00:07 PM3/22/2020 3:21:38 PM</TimeStamp>
+        <TimeStamp>mJF16t+fnQK+uiTfKany58/Z2Pk=4/2/2020 3:45:48 PM3/22/2020 3:21:38 PM</TimeStamp>
         <ID>
           <String>MOVIE DB SP2020</String>
         </ID>
@@ -33,35 +33,35 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>TIFZoE+Nyoch03vBck2PmjuzMSg=3/22/2020 4:24:00 PM3/22/2020 3:22:27 PM</TimeStamp>
+        <TimeStamp>Qrf6FDE3zjCx8kcSPCn98TSaRJ8=4/2/2020 3:55:08 PM3/22/2020 3:22:27 PM</TimeStamp>
         <ID>
-          <String>Dim Customer</String>
+          <String>Dim Time</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>t2jjddAkRF/YKqIEt0fx/r5bevo=3/22/2020 3:22:27 PM3/22/2020 3:22:27 PM</TimeStamp>
+        <TimeStamp>HRJrtES0UAxRgpyraik+t7aLKPY=4/2/2020 3:54:56 PM3/22/2020 3:22:27 PM</TimeStamp>
         <ID>
           <String>Dim Machine</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>haIBAtYrvinwaFC3EZDH0qlMgJU=3/22/2020 3:22:27 PM3/22/2020 3:22:27 PM</TimeStamp>
+        <TimeStamp>wVHW7o47pFIHJEIMGnpOAi3jVeU=4/2/2020 3:55:08 PM3/22/2020 3:22:27 PM</TimeStamp>
         <ID>
           <String>Dim Movie</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>OxDUTHrmel2dpUuWAR9Jck4lR+Q=3/22/2020 3:22:27 PM3/22/2020 3:22:27 PM</TimeStamp>
+        <TimeStamp>00va7gt92Dcde1lualrPSNXPO0I=4/2/2020 3:48:49 PM3/22/2020 3:22:27 PM</TimeStamp>
         <ID>
-          <String>Dim Time</String>
+          <String>Dim Customer</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>Prhr6K3l1c0Up/5NzS1x0wIiBgE=3/22/2020 4:24:00 PM3/22/2020 3:22:27 PMVWyfx7OxtX1N72iGDVcNh0psO+Q=3/22/2020 3:22:27 PM3/22/2020 3:22:27 PM</TimeStamp>
+        <TimeStamp>OdCdrE3QFSTBXYxu80jNrjX/tiE=4/2/2020 3:55:08 PM4/2/2020 3:46:47 PM5TL2fB4RhVZ/Lk5vaRe2IVetwWY=4/2/2020 3:46:47 PM4/2/2020 3:46:47 PM</TimeStamp>
         <ID>
           <String>MOVIE DB SP2020</String>
         </ID>
@@ -78,5 +78,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2020-03-22T09:24:01.51Z</LastDeployed>
+  <LastDeployed>2020-04-02T08:55:58.73Z</LastDeployed>
 </DeploymentSnapshot>

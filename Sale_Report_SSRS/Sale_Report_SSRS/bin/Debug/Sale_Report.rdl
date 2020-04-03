@@ -3,40 +3,55 @@
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="Datasource_Movie_DW">
-      <DataSourceReference>Datasource_Movie_DW</DataSourceReference>
+    <DataSource Name="Project_Relational_DW_Data_Source">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=DESKTOP-96JAG8I\DW;Initial Catalog=Project_Relational_DW</ConnectString>
+      </ConnectionProperties>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>85ba6301-e203-4368-be81-d754ae775e86</rd:DataSourceID>
+      <rd:DataSourceID>1996324d-978e-49b2-8c63-2ecd0471b049</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>Datasource_Movie_DW</DataSourceName>
-        <CommandText>SELECT        Dim_Customer.gender, Dim_Time.month, Dim_Time.year, Fact.duration, Fact.quantity
-FROM            Dim_Customer INNER JOIN
-                         Fact ON Dim_Customer.id = Fact.customer_id INNER JOIN
-                         Dim_Time ON Fact.retal_time_id = Dim_Time.id AND Fact.return_time_id = Dim_Time.id</CommandText>
+        <DataSourceName>Project_Relational_DW_Data_Source</DataSourceName>
+        <CommandText>SELECT        Customer.ID, Customer.FirstName, Customer.Gender, Fact.Cost, Fact.Amount, Time.Day, Time.Month, Time.Year
+FROM            Customer INNER JOIN
+                         Fact ON Customer.ID = Fact.CustomerID INNER JOIN
+                         Time ON Fact.OrderDate = Time.Date</CommandText>
       </Query>
       <Fields>
-        <Field Name="gender">
-          <DataField>gender</DataField>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="month">
-          <DataField>month</DataField>
+        <Field Name="Gender">
+          <DataField>Gender</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cost">
+          <DataField>Cost</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Amount">
+          <DataField>Amount</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Day">
+          <DataField>Day</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="year">
-          <DataField>year</DataField>
+        <Field Name="Month">
+          <DataField>Month</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="duration">
-          <DataField>duration</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="quantity">
-          <DataField>quantity</DataField>
+        <Field Name="Year">
+          <DataField>Year</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
@@ -82,20 +97,20 @@ FROM            Dim_Customer INNER JOIN
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>1.14in</Height>
+                  <Height>1.35in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
                         <Rectangle Name="List1_Contents">
                           <ReportItems>
-                            <Textbox Name="gender">
+                            <Textbox Name="Gender">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!gender.Value</Value>
+                                      <Value>=Fields!Gender.Value</Value>
                                       <Style>
                                         <FontFamily />
                                         <FontSize>14pt</FontSize>
@@ -105,7 +120,7 @@ FROM            Dim_Customer INNER JOIN
                                   <Style />
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>gender</rd:DefaultName>
+                              <rd:DefaultName>Gender</rd:DefaultName>
                               <Height>0.27in</Height>
                               <Style>
                                 <FontFamily />
@@ -151,11 +166,21 @@ FROM            Dim_Customer INNER JOIN
                                             <PaddingBottom>2pt</PaddingBottom>
                                           </Style>
                                         </Textbox>
-                                        <RowSpan>2</RowSpan>
+                                        <ColSpan>3</ColSpan>
+                                        <RowSpan>3</RowSpan>
                                       </CellContents>
                                     </TablixCornerCell>
+                                    <TablixCornerCell />
+                                    <TablixCornerCell />
                                   </TablixCornerRow>
                                   <TablixCornerRow>
+                                    <TablixCornerCell />
+                                    <TablixCornerCell />
+                                    <TablixCornerCell />
+                                  </TablixCornerRow>
+                                  <TablixCornerRow>
+                                    <TablixCornerCell />
+                                    <TablixCornerCell />
                                     <TablixCornerCell />
                                   </TablixCornerRow>
                                 </TablixCornerRows>
@@ -182,7 +207,7 @@ FROM            Dim_Customer INNER JOIN
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Sum(Fields!duration.Value)</Value>
+                                                    <Value>=Sum(Fields!Cost.Value)</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <Color>#333333</Color>
@@ -221,7 +246,7 @@ FROM            Dim_Customer INNER JOIN
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Sum(Fields!quantity.Value)</Value>
+                                                    <Value>=Sum(Fields!Amount.Value)</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <Color>#333333</Color>
@@ -258,27 +283,27 @@ FROM            Dim_Customer INNER JOIN
                               <TablixColumnHierarchy>
                                 <TablixMembers>
                                   <TablixMember>
-                                    <Group Name="matrix1_month">
+                                    <Group Name="matrix1_ID">
                                       <GroupExpressions>
-                                        <GroupExpression>=Fields!month.Value</GroupExpression>
+                                        <GroupExpression>=Fields!ID.Value</GroupExpression>
                                       </GroupExpressions>
                                     </Group>
                                     <SortExpressions>
                                       <SortExpression>
-                                        <Value>=Fields!month.Value</Value>
+                                        <Value>=Fields!ID.Value</Value>
                                       </SortExpression>
                                     </SortExpressions>
                                     <TablixHeader>
                                       <Size>0.21in</Size>
                                       <CellContents>
-                                        <Textbox Name="month">
+                                        <Textbox Name="ID">
                                           <CanGrow>true</CanGrow>
                                           <KeepTogether>true</KeepTogether>
                                           <Paragraphs>
                                             <Paragraph>
                                               <TextRuns>
                                                 <TextRun>
-                                                  <Value>=Fields!month.Value</Value>
+                                                  <Value>=Fields!ID.Value</Value>
                                                   <Style>
                                                     <FontFamily />
                                                   </Style>
@@ -290,7 +315,7 @@ FROM            Dim_Customer INNER JOIN
                                               </Style>
                                             </Paragraph>
                                           </Paragraphs>
-                                          <rd:DefaultName>month</rd:DefaultName>
+                                          <rd:DefaultName>ID</rd:DefaultName>
                                           <Height>0.21in</Height>
                                           <Width>1in</Width>
                                           <Style>
@@ -308,41 +333,45 @@ FROM            Dim_Customer INNER JOIN
                                     </TablixHeader>
                                     <TablixMembers>
                                       <TablixMember>
+                                        <Group Name="matrix1_FirstName">
+                                          <GroupExpressions>
+                                            <GroupExpression>=Fields!FirstName.Value</GroupExpression>
+                                          </GroupExpressions>
+                                        </Group>
+                                        <SortExpressions>
+                                          <SortExpression>
+                                            <Value>=Fields!FirstName.Value</Value>
+                                          </SortExpression>
+                                        </SortExpressions>
                                         <TablixHeader>
-                                          <Size>0.22in</Size>
+                                          <Size>0.21in</Size>
                                           <CellContents>
-                                            <Textbox Name="textbox5">
+                                            <Textbox Name="FirstName">
                                               <CanGrow>true</CanGrow>
                                               <KeepTogether>true</KeepTogether>
                                               <Paragraphs>
                                                 <Paragraph>
                                                   <TextRuns>
                                                     <TextRun>
-                                                      <Value>duration</Value>
+                                                      <Value>=Fields!FirstName.Value</Value>
                                                       <Style>
                                                         <FontFamily />
-                                                        <FontSize>11pt</FontSize>
-                                                        <FontWeight>Bold</FontWeight>
-                                                        <Color>#666666</Color>
                                                       </Style>
                                                     </TextRun>
                                                   </TextRuns>
                                                   <Style>
                                                     <FontFamily />
-                                                    <TextAlign>Right</TextAlign>
+                                                    <TextAlign>Left</TextAlign>
                                                   </Style>
                                                 </Paragraph>
                                               </Paragraphs>
-                                              <rd:DefaultName>textbox5</rd:DefaultName>
-                                              <Height>0.22in</Height>
+                                              <rd:DefaultName>FirstName</rd:DefaultName>
+                                              <Height>0.21in</Height>
                                               <Width>1in</Width>
                                               <Style>
                                                 <Border>
                                                   <Color>LightGrey</Color>
                                                 </Border>
-                                                <BottomBorder>
-                                                  <Style>Solid</Style>
-                                                </BottomBorder>
                                                 <FontFamily />
                                                 <PaddingLeft>2pt</PaddingLeft>
                                                 <PaddingRight>2pt</PaddingRight>
@@ -352,85 +381,134 @@ FROM            Dim_Customer INNER JOIN
                                             </Textbox>
                                           </CellContents>
                                         </TablixHeader>
-                                        <KeepTogether>true</KeepTogether>
-                                      </TablixMember>
-                                      <TablixMember>
-                                        <TablixHeader>
-                                          <Size>0.22in</Size>
-                                          <CellContents>
-                                            <Textbox Name="textbox6">
-                                              <CanGrow>true</CanGrow>
-                                              <KeepTogether>true</KeepTogether>
-                                              <Paragraphs>
-                                                <Paragraph>
-                                                  <TextRuns>
-                                                    <TextRun>
-                                                      <Value>quantity</Value>
+                                        <TablixMembers>
+                                          <TablixMember>
+                                            <TablixHeader>
+                                              <Size>0.22in</Size>
+                                              <CellContents>
+                                                <Textbox Name="textbox5">
+                                                  <CanGrow>true</CanGrow>
+                                                  <KeepTogether>true</KeepTogether>
+                                                  <Paragraphs>
+                                                    <Paragraph>
+                                                      <TextRuns>
+                                                        <TextRun>
+                                                          <Value>Cost</Value>
+                                                          <Style>
+                                                            <FontFamily />
+                                                            <FontSize>11pt</FontSize>
+                                                            <FontWeight>Bold</FontWeight>
+                                                            <Color>#666666</Color>
+                                                          </Style>
+                                                        </TextRun>
+                                                      </TextRuns>
                                                       <Style>
                                                         <FontFamily />
-                                                        <FontSize>11pt</FontSize>
-                                                        <FontWeight>Bold</FontWeight>
-                                                        <Color>#666666</Color>
+                                                        <TextAlign>Right</TextAlign>
                                                       </Style>
-                                                    </TextRun>
-                                                  </TextRuns>
+                                                    </Paragraph>
+                                                  </Paragraphs>
+                                                  <rd:DefaultName>textbox5</rd:DefaultName>
+                                                  <Height>0.22in</Height>
+                                                  <Width>1in</Width>
                                                   <Style>
+                                                    <Border>
+                                                      <Color>LightGrey</Color>
+                                                    </Border>
+                                                    <BottomBorder>
+                                                      <Style>Solid</Style>
+                                                    </BottomBorder>
                                                     <FontFamily />
-                                                    <TextAlign>Right</TextAlign>
+                                                    <PaddingLeft>2pt</PaddingLeft>
+                                                    <PaddingRight>2pt</PaddingRight>
+                                                    <PaddingTop>2pt</PaddingTop>
+                                                    <PaddingBottom>2pt</PaddingBottom>
                                                   </Style>
-                                                </Paragraph>
-                                              </Paragraphs>
-                                              <rd:DefaultName>textbox6</rd:DefaultName>
-                                              <Height>0.22in</Height>
-                                              <Width>1in</Width>
-                                              <Style>
-                                                <Border>
-                                                  <Color>LightGrey</Color>
-                                                </Border>
-                                                <BottomBorder>
-                                                  <Style>Solid</Style>
-                                                </BottomBorder>
-                                                <FontFamily />
-                                                <PaddingLeft>2pt</PaddingLeft>
-                                                <PaddingRight>2pt</PaddingRight>
-                                                <PaddingTop>2pt</PaddingTop>
-                                                <PaddingBottom>2pt</PaddingBottom>
-                                              </Style>
-                                            </Textbox>
-                                          </CellContents>
-                                        </TablixHeader>
+                                                </Textbox>
+                                              </CellContents>
+                                            </TablixHeader>
+                                            <KeepTogether>true</KeepTogether>
+                                          </TablixMember>
+                                          <TablixMember>
+                                            <TablixHeader>
+                                              <Size>0.22in</Size>
+                                              <CellContents>
+                                                <Textbox Name="textbox6">
+                                                  <CanGrow>true</CanGrow>
+                                                  <KeepTogether>true</KeepTogether>
+                                                  <Paragraphs>
+                                                    <Paragraph>
+                                                      <TextRuns>
+                                                        <TextRun>
+                                                          <Value>Amount</Value>
+                                                          <Style>
+                                                            <FontFamily />
+                                                            <FontSize>11pt</FontSize>
+                                                            <FontWeight>Bold</FontWeight>
+                                                            <Color>#666666</Color>
+                                                          </Style>
+                                                        </TextRun>
+                                                      </TextRuns>
+                                                      <Style>
+                                                        <FontFamily />
+                                                        <TextAlign>Right</TextAlign>
+                                                      </Style>
+                                                    </Paragraph>
+                                                  </Paragraphs>
+                                                  <rd:DefaultName>textbox6</rd:DefaultName>
+                                                  <Height>0.22in</Height>
+                                                  <Width>1in</Width>
+                                                  <Style>
+                                                    <Border>
+                                                      <Color>LightGrey</Color>
+                                                    </Border>
+                                                    <BottomBorder>
+                                                      <Style>Solid</Style>
+                                                    </BottomBorder>
+                                                    <FontFamily />
+                                                    <PaddingLeft>2pt</PaddingLeft>
+                                                    <PaddingRight>2pt</PaddingRight>
+                                                    <PaddingTop>2pt</PaddingTop>
+                                                    <PaddingBottom>2pt</PaddingBottom>
+                                                  </Style>
+                                                </Textbox>
+                                              </CellContents>
+                                            </TablixHeader>
+                                            <KeepTogether>true</KeepTogether>
+                                          </TablixMember>
+                                        </TablixMembers>
+                                        <DataElementOutput>Output</DataElementOutput>
                                         <KeepTogether>true</KeepTogether>
                                       </TablixMember>
                                     </TablixMembers>
                                     <DataElementOutput>Output</DataElementOutput>
-                                    <KeepTogether>true</KeepTogether>
                                   </TablixMember>
                                 </TablixMembers>
                               </TablixColumnHierarchy>
                               <TablixRowHierarchy>
                                 <TablixMembers>
                                   <TablixMember>
-                                    <Group Name="matrix1_year">
+                                    <Group Name="matrix1_Day">
                                       <GroupExpressions>
-                                        <GroupExpression>=Fields!year.Value</GroupExpression>
+                                        <GroupExpression>=Fields!Day.Value</GroupExpression>
                                       </GroupExpressions>
                                     </Group>
                                     <SortExpressions>
                                       <SortExpression>
-                                        <Value>=Fields!year.Value</Value>
+                                        <Value>=Fields!Day.Value</Value>
                                       </SortExpression>
                                     </SortExpressions>
                                     <TablixHeader>
                                       <Size>1in</Size>
                                       <CellContents>
-                                        <Textbox Name="year">
+                                        <Textbox Name="Day">
                                           <CanGrow>true</CanGrow>
                                           <KeepTogether>true</KeepTogether>
                                           <Paragraphs>
                                             <Paragraph>
                                               <TextRuns>
                                                 <TextRun>
-                                                  <Value>=Fields!year.Value</Value>
+                                                  <Value>=Fields!Day.Value</Value>
                                                   <Style>
                                                     <FontFamily />
                                                   </Style>
@@ -442,7 +520,7 @@ FROM            Dim_Customer INNER JOIN
                                               </Style>
                                             </Paragraph>
                                           </Paragraphs>
-                                          <rd:DefaultName>year</rd:DefaultName>
+                                          <rd:DefaultName>Day</rd:DefaultName>
                                           <Height>0.21in</Height>
                                           <Width>1in</Width>
                                           <Style>
@@ -458,8 +536,114 @@ FROM            Dim_Customer INNER JOIN
                                         </Textbox>
                                       </CellContents>
                                     </TablixHeader>
+                                    <TablixMembers>
+                                      <TablixMember>
+                                        <Group Name="matrix1_Month">
+                                          <GroupExpressions>
+                                            <GroupExpression>=Fields!Month.Value</GroupExpression>
+                                          </GroupExpressions>
+                                        </Group>
+                                        <SortExpressions>
+                                          <SortExpression>
+                                            <Value>=Fields!Month.Value</Value>
+                                          </SortExpression>
+                                        </SortExpressions>
+                                        <TablixHeader>
+                                          <Size>1in</Size>
+                                          <CellContents>
+                                            <Textbox Name="Month">
+                                              <CanGrow>true</CanGrow>
+                                              <KeepTogether>true</KeepTogether>
+                                              <Paragraphs>
+                                                <Paragraph>
+                                                  <TextRuns>
+                                                    <TextRun>
+                                                      <Value>=Fields!Month.Value</Value>
+                                                      <Style>
+                                                        <FontFamily />
+                                                      </Style>
+                                                    </TextRun>
+                                                  </TextRuns>
+                                                  <Style>
+                                                    <FontFamily />
+                                                    <TextAlign>Right</TextAlign>
+                                                  </Style>
+                                                </Paragraph>
+                                              </Paragraphs>
+                                              <rd:DefaultName>Month</rd:DefaultName>
+                                              <Height>0.21in</Height>
+                                              <Width>1in</Width>
+                                              <Style>
+                                                <Border>
+                                                  <Color>LightGrey</Color>
+                                                </Border>
+                                                <FontFamily />
+                                                <PaddingLeft>2pt</PaddingLeft>
+                                                <PaddingRight>2pt</PaddingRight>
+                                                <PaddingTop>2pt</PaddingTop>
+                                                <PaddingBottom>2pt</PaddingBottom>
+                                              </Style>
+                                            </Textbox>
+                                          </CellContents>
+                                        </TablixHeader>
+                                        <TablixMembers>
+                                          <TablixMember>
+                                            <Group Name="matrix1_Year">
+                                              <GroupExpressions>
+                                                <GroupExpression>=Fields!Year.Value</GroupExpression>
+                                              </GroupExpressions>
+                                            </Group>
+                                            <SortExpressions>
+                                              <SortExpression>
+                                                <Value>=Fields!Year.Value</Value>
+                                              </SortExpression>
+                                            </SortExpressions>
+                                            <TablixHeader>
+                                              <Size>1in</Size>
+                                              <CellContents>
+                                                <Textbox Name="Year">
+                                                  <CanGrow>true</CanGrow>
+                                                  <KeepTogether>true</KeepTogether>
+                                                  <Paragraphs>
+                                                    <Paragraph>
+                                                      <TextRuns>
+                                                        <TextRun>
+                                                          <Value>=Fields!Year.Value</Value>
+                                                          <Style>
+                                                            <FontFamily />
+                                                          </Style>
+                                                        </TextRun>
+                                                      </TextRuns>
+                                                      <Style>
+                                                        <FontFamily />
+                                                        <TextAlign>Right</TextAlign>
+                                                      </Style>
+                                                    </Paragraph>
+                                                  </Paragraphs>
+                                                  <rd:DefaultName>Year</rd:DefaultName>
+                                                  <Height>0.21in</Height>
+                                                  <Width>1in</Width>
+                                                  <Style>
+                                                    <Border>
+                                                      <Color>LightGrey</Color>
+                                                    </Border>
+                                                    <FontFamily />
+                                                    <PaddingLeft>2pt</PaddingLeft>
+                                                    <PaddingRight>2pt</PaddingRight>
+                                                    <PaddingTop>2pt</PaddingTop>
+                                                    <PaddingBottom>2pt</PaddingBottom>
+                                                  </Style>
+                                                </Textbox>
+                                              </CellContents>
+                                            </TablixHeader>
+                                            <DataElementOutput>Output</DataElementOutput>
+                                            <KeepTogether>true</KeepTogether>
+                                          </TablixMember>
+                                        </TablixMembers>
+                                        <DataElementOutput>Output</DataElementOutput>
+                                      </TablixMember>
+                                    </TablixMembers>
                                     <DataElementOutput>Output</DataElementOutput>
-                                    <KeepTogether>true</KeepTogether>
                                   </TablixMember>
                                 </TablixMembers>
                               </TablixRowHierarchy>
@@ -487,9 +671,9 @@ FROM            Dim_Customer INNER JOIN
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="list1_gender">
+                  <Group Name="list1_Gender">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!gender.Value</GroupExpression>
+                      <GroupExpression>=Fields!Gender.Value</GroupExpression>
                     </GroupExpressions>
                     <PageBreak>
                       <BreakLocation>Between</BreakLocation>
@@ -497,7 +681,7 @@ FROM            Dim_Customer INNER JOIN
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!gender.Value</Value>
+                      <Value>=Fields!Gender.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <DataElementOutput>Output</DataElementOutput>
@@ -515,7 +699,7 @@ FROM            Dim_Customer INNER JOIN
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.57in</Height>
+        <Height>1.78in</Height>
         <Style />
       </Body>
       <Width>5in</Width>
@@ -537,5 +721,5 @@ FROM            Dim_Customer INNER JOIN
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Invalid</rd:ReportUnitType>
-  <rd:ReportID>dc61b530-8a89-4767-bcde-d384095f08d6</rd:ReportID>
+  <rd:ReportID>514991cb-753c-447a-af2d-073c7ca2eeed</rd:ReportID>
 </Report>
